@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sugalist</title>
+
+
+<!--- css --->
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!--- responsive --->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+		<div class="container-fluid">
+
+<!--- Menu HEADER --->
+
+     			<div class="navbar container">
+					<div class="navbar-inner">
+                        <a class="brand" href="/"> <img src="img/logo.png"/></a>
+                        <ul class="nav">
+                        <h3><li class="span5 offset1">
+                        	<form class="navbar-form">
+                            <input type="text" placeholder="What are you loking for ?">
+                        	<button type="submit" class="btn">SEARCH</button>
+                            </form>
+                        </li></h3>
+                        </ul>
+                       
+                        <ul class="nav pull-right">
+                          	<li><a href="#">Sign Up</a></li>
+                          	<li class="dropdown">
+                           	 	<a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
+                            	<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+                                      <form action="[YOUR ACTION]" method="post" accept-charset="UTF-8">
+                                          <input id="user_username"  placeholder="Username" style="margin-bottom: 15px;" type="text" name="user[username]" size="30" />
+                                          <input id="user_password"  placeholder="Password" style="margin-bottom: 15px;" type="password" name="user[password]" size="30" />
+                                          <input id="user_remember_me" style="float: left; margin-right: 10px;" type="checkbox" name="user[remember_me]" value="1" />
+                                          <label class="string optional" for="user_remember_me"> Remember me</label>
+                                          <input class="btn" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Sign In" />
+                           			  </form>
+                           		</div>
+                          	</li>
+                          </ul> 
+                          
+                     </div>
+                 </div> 
+
+<!--- Container --->                 
+                
+                
+                <div class="row container ">
+                <div id="tab_products" class="span9 container" > 
+                
+                        <table class="table table-striped container">
+                         <caption class="text-left text-error">
+                			<h3>Added to whishlist</h3>
+               			 </caption>    
+                        	<thead>
+                            	<tr style="background-color: #9b9b9b; color: white;">
+                                	<th>Category</th>
+                                    <th>Product</th>
+                                    <th>Size</th>
+                                    <th>Color</th>
+                                    <th>Followers</th>
+                                    <th>Price   </th>
+                                    <th>Sale   </th>
+                                    <th>Suga</th>
+                                    <th>Promo</th>
+                                    <th>End</th>
+                                </tr>
+                            </thead>
+                            <tbody class="muted">
+                            	<tr>
+                                	<td>Tshirt</td>
+                                    <td>Sugashop</td>
+                                    <td>Bowery Slim in Oxford</td>
+                                    <td>Red</td>
+                                    <td>10</td>
+                                    <td class="text-success text-right">128 $</td>
+                                    <td class="text-error text-right">90 $</td>
+                                    <td class="text-error text-right">70 $</td>
+                                    <td>09-20</td>
+                                    <td>09-20</td>
+                                </tr>
+                                                         
+                                <tr>
+                                	<td>Honey Bottle</td>
+                                    <td>City Styles</td>
+                                    <td>Natures Slim</td>
+                                    <td>Blue</td>
+                                   	<td>10</td>
+                                    <td class="text-success text-right">128 $</td>
+                                    <td class="text-error text-right">90 $</td>
+                                    <td class="text-error text-right">70 $</td>
+                                    <td>09-20</td>
+                                    <td>09-20</td>
+                                </tr>
+                                
+                                <tr>
+                                	<td>Tin Can Lanterns</td>
+                                    <td>Gap</td>
+                                    <td>new</td>
+                                    <td>Yellow</td>
+                                    <td>10</td>
+                                    <td class="text-success text-right">128 $</td>
+                                    <td class="text-error text-right">90 $</td>
+                                    <td class="text-error text-right">70 $</td>
+                                    <td>09-20</td>
+                                    <td>09-20</td>
+                                </tr>
+                                                                
+                            </tbody>
+                            
+                        
+                        </table>      
+
+        </div>
+        <br>
+        <br>
+                   
+                   <div class="span3">
+                   
+                    <div id="Notifications">
+                                <table class="table table-bordered" style="table-layout:fixed; word-wrap: break-word;">
+                                       <thead>
+                                   <h1> <tr style="background-color:rgb(249,249,249);">
+                                    <th><p style="text-indent:10px; margin-top:5px;color: #ff3333; font-size:x-large;">Notifications</p></th>
+                                </tr></h1>
+                                 </thead>
+                                  <tbody>
+                                                       <tr>
+                                      <td>
+                                      <form id="form_write_notifications"class="navbar-form" onblur="cacher()" action="[YOUR ACTION2]" method="post" accept-charset="UTF-8">
+                             <textarea id="click" onfocus="nohidden()" rows="1" style="height:25px; width:188px; resize:none;" placeholder="Write new notifications... "></textarea>
+                        	<div id="hidden">
+                            <button type="submit" onfocus="nohidden()" class="btn">Submit</button>
+                            </div>
+                            </form>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td><strong>Gucci</strong><br>Today 20% off if it's your birthday<small><br><em class="muted">Tuesday 21st</em></small></td>
+                                    </tr>
+                                  <tr>
+                                      <td><strong>Gap</strong><br>Sales<small><br><em class="muted">Monday 21st</em></small></td>
+                                    </tr>
+                                    <tr>
+                                      <td><strong>Nike</strong><br>Air Force at low price<br><small><em class="muted">Monday 12st</em></small></td>
+                                    </tr>
+                                   <tr>
+                                      <td><strong>Nike</strong><br>Air Force at low price<small><br><em class="muted">Monday 12st</em></small></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                                
+                                <div id="stats">
+                                <table class="table table-bordered" style="table-layout:fixed; word-wrap: break-word;">
+                                       <thead>
+                                   <h1> <tr style="background-color:rgb(249,249,249);">
+                                    <th><p style="text-indent:10px; margin-top:5px;color: #ff3333; font-size:x-large;">Stats</p></th>
+                                </tr></h1>
+                                 </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                      <strong>
+                                      <p>38 Followers</p>
+                                      <p>3 products on sale</p>
+                                      <p>4 Products on sale (followers)</p>
+                                      <p>5 Visits today</p>
+                                      </strong>
+                                      </td>
+                                    </tr>
+                 
+                                    </tbody>
+                                </table>
+                                
+                                </div>
+
+                            </div>
+                        <footer id="footer" class="row span12 container">
+           					
+                            
+                            <hr>
+                             &copy; 2013 sugalist, Inc.
+                            <ul class="inline nav pull-right">
+                            
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">Contact</a></li>
+                              <li><a href="#">Copyright</a></li>
+                            </ul>
+          			  </footer>
+                         </div>
+
+
+			
+</div>
+
+<!--- js --->
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+function nohidden () {
+
+document.getElementById("click").style.height = "100px";
+document.getElementById("hidden").style.display = "block";
+ }
+ function cacher () {
+
+document.getElementById("click").style.height = "25px";
+$('#hidden').hide();
+ }
+
+</script>
+<style type="text/css">
+#hidden { display: none; }
+</style>
+</body>
+</html>
